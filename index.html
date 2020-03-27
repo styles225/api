@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+
+        <!--Charset, IE=Edge, Viewport, Title-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Title Here</title>
+
+        <!--JQuery, DataLayer, GTM & Marketing Tags-->
+
+        <!--SERP Description-->
+        <meta name="description" content="This is what you will see on the front page of Google, etc.">
+
+        <!--Favicons here-->
+        <!--follow this here: https://realfavicongenerator.net-->
+        
+        <!--External stylesheets and JavaScript-->
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        
+        <!--Opengraph & Twitter Cards-->
+        <!--https://css-tricks.com/essential-meta-tags-social-media/
+        https://blog.kissmetrics.com/open-graph-meta-tags/
+        https://megatags.co/#generate-tags
+        https://developers.facebook.com/docs/sharing/webmasters#markup
+        http://ogp.me
+        https://moz.com/blog/meta-data-templates-123-->
+
+    </head>
+    <body>
+        <!--Header & Nav-->
+<!-- 
+            <header>
+                <nav>
+                    <a href="#">About</a>
+                    <a href="#">Nope</a>
+                    <a href="#">Yass</a>
+                    <a href="#">Nooo</a>
+                    <a href="#">We're Here</a>
+                    <a href="#">Holla</a>
+                </nav>
+                <h1>Header</h1>
+            </header>
+
+            <aside>
+                <h1>Aside</h1>
+            </aside>
+ -->
+     <div class="main-container">
+        <main id="main">
+        </main>
+    </div>
+
+    </body>
+
+    <script id="news-card-template" type="text/x-handlebars-template">
+        <a href="{{articleURL}}" target="_blank">
+            <article>
+                <div class="card">
+                  <div class="bgimg bgimg-{{i}}"></div>
+                  <div class="container">
+                    <h2>{{title}}</h2>
+                    <p>{{description}}</p>
+                </div>
+            </article>
+        </a>
+    </script>
+
+    <script src="js/app.js"></script>
+
+</html>
+
